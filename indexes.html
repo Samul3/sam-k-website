@@ -1,0 +1,262 @@
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website HTML CSS Only
+        codehal</title>
+        <link rel="stylesheet" href="portfolio.html">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <style>
+        . {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        
+        body {
+            background: #081b29;
+            color: white;
+        }
+        
+        .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 10%;
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+            
+    }
+        .logo {
+            position: relative;
+            font-size: 25px;
+            color: #ededed;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        
+            
+            
+            
+        
+    
+        .navbar a {
+            justify-content: space-between;
+            font-size: 18px;
+            color: #ededed;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            transition: .3s;
+        } 
+        
+        .navbar a:hover,
+        .navbar a.active{
+            color: aqua;
+        }
+        
+        .home {
+            height: 100vh;
+            background: url('WhatsApp Image 2024-08-08 at 5.21.50 AM.jpeg') no-repeat;
+            background-size: contain;
+            background-position: right;
+            
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+            
+        }
+        
+        .home-content {
+            max-width: 600px;
+        }
+        
+        .home-content h1 {
+            font-size: 56px;
+            font-weight: 700px;
+            line-height: 1.2px;
+            
+        }
+        
+        .home-content h3 {
+            font-size: 32px;
+            font-weight: 700px;
+            color: #00abf0;    
+        }
+        
+        .home-content p {
+            font-size: 16px;
+            margin: 20px 0 40px;
+        }
+        
+        .home-content .bnt-box {
+            display: flex;
+            justify-content: space-between;
+            width: 345px;
+            height: 50px;
+            
+            
+        }
+        
+        .bnt-box a{
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 100%;
+            background: #00abf0;
+            border: 2px solid #00abf0;
+            border-radius: 8px;
+            font-size: 19px;
+            color: #081b29;
+            text-decoration: none;
+            font-weight: 600px;
+            letter-spacing: 1px;
+            transition: .5s;
+            overflow: hidden;
+        }
+        
+        .bnt-box a:nth-child(1) {
+            background: #00abf0;
+            color: black;
+        }
+        
+        .bnt-box a:nth-child(1):hover {
+            background: transparent;
+            color: #00abf0;
+        }
+        
+        
+        
+        .bnt-box a:nth-child(2) {
+            background: transparent;
+            color: #00abf0;
+            
+            
+        }
+        
+        .bnt-box a:nth-child(2):hover {
+            background: #00abf0;
+            color: black;        
+            
+        }
+        
+        .home-sci {
+            position: absolute;
+            bottom: 40px;
+            width: 170px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .home-sci a {
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 2px solid #00abf0;
+            border-radius: 50%;
+            font-size: 20px;
+            color: #00abf0;
+            text-decoration: none;
+            transition: .5s;
+            
+        }
+        
+        .home-sci a:hover {
+            background: #00abf0;
+            color: black;
+            
+        }
+        
+        .home-imghover {
+            position: absolute;
+            top: 0;
+            right: 2px;
+            width: 500px;
+            height: 100%;
+            background: transparent;
+            border: 2px;
+            transition: 3s;
+            
+        }
+        
+        .home-imghover:hover {
+            background: #081b29;
+            opacity: .8;
+            
+        }
+        
+                
+            
+       /*KEYFRAMES ANIMATION */
+        
+        @keyframes showright {
+            100% {
+                width: 0;
+            }
+            
+        }
+    
+    </style>
+    
+    <body>
+        
+        <header class="header">
+            <a href="#" class="logo">Samuel.</a>
+            
+            <nav class="navbar">
+                <a href="#" class="active">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+        
+        <section class="home">
+           <div class="home-content">
+               <h1>Hi, i`m Samuel Kyere</h1>
+               <h3>frontend Developer</h3>
+               <p >We serve our people with quality house and furniture's.
+Our security  is very secured and through that we are able
+To protect our customers from scammers and fraudsters.
+We won the best Business Company in West Africa .
+Our business has expand swiftly due to our hard work.</p>
+               <div class="bnt-box">
+            <a href="#">Hire Me</a>
+            <a href="#">Let`s Talk</a>
+        </div>    
+    </div>
+        
+        <div class="home-sci">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+                
+            <span class="home-imghover"></span>
+                    
+            
+        </section>
+        
+        
+    </body>
+    
+    
+    
+    
+</html>
